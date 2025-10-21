@@ -1,3 +1,6 @@
+/**
+ * Holds an interface to require all lists to have the methods below
+ */
 public interface List<T> {
 
     public void add (int index, T element);
