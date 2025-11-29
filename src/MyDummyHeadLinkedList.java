@@ -57,7 +57,7 @@ public class MyDummyHeadLinkedList<T> implements List<T> {
      */
     @Override
     public T get(int index) {
-        if (index < 0 || index >= size) throw new IndexOutOfBoundsException();
+        if (index < 0 || index >= size) throw new IndexOutOfBoundsException();  
         SNode<T> p = dummy.getNext();
         for (int i = 0; i < index; i++) p = p.getNext();
         return p.getData();

@@ -3,9 +3,9 @@
  */
 public interface List<T> {
 
-    public void add (int index, T element);
+    public void add (int index, T element) throws IndexOutOfBoundsException;
     public boolean add (T element);
-    public T get (int index);
-    public T remove (int index);
+    public T get (int index) throws IndexOutOfBoundsException;
+    public T remove (int index) throws IndexOutOfBoundsException;
     public int size ();
 }
